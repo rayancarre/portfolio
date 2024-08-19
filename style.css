@@ -1,0 +1,249 @@
+/* Style global */
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header - Page d'accueil */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    background-image: url('background.jpg'); /* Arrière-plan avec une image sombre */
+    background-size: cover;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #00ffcc;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    color: #00ffcc;
+    margin-top: 20px;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00ffcc;
+    color: #000;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #00cccc;
+  }
+  
+  /* À propos de moi */
+  section#about {
+    padding: 100px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+  }
+  
+  section#about h2 {
+    color: #00ffcc;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  section#about ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  section#about ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  /* Projets */
+  section#projects {
+    padding: 100px 20px;
+    background-color: #000;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .project {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .project img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .project h3 {
+    color: #00ffcc;
+    margin-top: 10px;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Compétences techniques */
+  section#skills {
+    padding: 100px 20px;
+    background-color: #1a1a1a;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .skill {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .skill h4 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+  }
+  
+  /* Témoignages */
+  section#testimonials {
+    padding: 100px 20px;
+    background-color: #000;
+    text-align: center;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    overflow-x: auto;
+  }
+  
+  .testimonial-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .testimonial-item p {
+    font-size: 1rem;
+  }
+  
+  .testimonial-item h4 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #00ffcc;
+  }
+  
+  /* Blog */
+  section#blog {
+    padding: 100px 20px;
+    background-color: #1a1a1a;
+  }
+  
+  section#blog article {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  section#blog article h3 {
+    color: #00ffcc;
+  }
+  
+  section#blog article p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Formulaire de contact */
+  section#contact {
+    padding: 100px 20px;
+    background-color: #000;
+    text-align: center;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .neon-input {
+    background: #333;
+    border: none;
+    padding: 15px;
+    color: #00ffcc;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  
+  .neon-button {
+    background-color: #00ffcc;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s;
+  }
+  
+  .neon-button:hover {
+    background-color: #00cccc;
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  /* Effet de fade-in (apparition progressive) */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  

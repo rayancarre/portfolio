@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Rayan Carre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accueil -->
+  <header id="home">
+    <div class="profile">
+      <img src="profil.jpg" alt="Photo de Rayan Carre" class="profile-pic">
+    </div>
+    <div class="intro">
+      <h1>Rayan Carre</h1>
+      <p>Étudiant en informatique | Futur Officier en Cybersécurité</p>
+      <a href="#about" class="cta-button">En savoir plus</a>
+    </div>
+  </header>
+
+  <!-- À propos avec animation fade-in -->
+  <section id="about" class="parallax fade-in">
+    <div class="container">
+      <h2>À propos de moi</h2>
+      <p>Je suis étudiant en informatique et ancien élève du Lycée Militaire d'Autun, avec un objectif clair : intégrer l'armée en tant qu'officier en cybersécurité. Je m'intéresse particulièrement aux technologies liées à la cybersécurité, l'intelligence artificielle et le développement de logiciels pour des entreprises et des particuliers.</p>
+      <h3>Mes Ambitions</h3>
+      <ul>
+        <li>Défendre les infrastructures numériques militaires françaises.</li>
+        <li>Utiliser des technologies d'IA pour améliorer la cybersécurité.</li>
+        <li>Continuer à développer des solutions innovantes pour contrer les cyberattaques.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projets avec animation fade-in -->
+  <section id="projects" class="fade-in">
+    <h2>Mes Projets</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="project1.jpg" alt="Site de Restaurant">
+        <h3>Site de Restaurant</h3>
+        <p>Création d'un site web moderne et responsive pour un restaurant local, avec un système de réservation en ligne.</p>
+      </div>
+      <div class="project">
+        <img src="project2.jpg" alt="Logiciel de gestion">
+        <h3>Logiciel de gestion pour entreprise</h3>
+        <p>Développement d'un logiciel de gestion pour une entreprise de transport, facilitant la gestion des employés et des stocks.</p>
+      </div>
+      <div class="project">
+        <img src="project3.jpg" alt="Application de Trading">
+        <h3>Application de Trading</h3>
+        <p>Développement d'un système de trading assisté par IA, automatisant l'achat et la vente d'actions en fonction d'algorithmes prédéfinis.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences techniques avec animation fade-in -->
+  <section id="skills" class="fade-in">
+    <h2>Mes Compétences Techniques</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <h4>HTML/CSS/JavaScript</h4>
+        <p>Création de sites web modernes et interactifs.</p>
+      </div>
+      <div class="skill">
+        <h4>GoLang et C++</h4>
+        <p>Maîtrise des langages de programmation avancés pour le développement d'applications sécurisées.</p>
+      </div>
+      <div class="skill">
+        <h4>IA et Cybersécurité</h4>
+        <p>Utilisation d'outils d'IA pour renforcer la sécurité des systèmes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Témoignages avec animation fade-in -->
+  <section id="testimonials" class="fade-in">
+    <h2>Témoignages</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial-item">
+        <p>"Grâce à l'expertise de Rayan, notre restaurant a vu une augmentation de 30% des réservations en ligne."</p>
+        <h4>- Client Restaurant</h4>
+      </div>
+      <div class="testimonial-item">
+        <p>"Le logiciel développé par Rayan a simplifié notre gestion de stock et nous a fait gagner énormément de temps."</p>
+        <h4>- Entreprise de logiciel</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog avec animation fade-in -->
+  <section id="blog" class="fade-in">
+    <h2>Blog</h2>
+    <article>
+      <h3>Les défis de la cybersécurité moderne</h3>
+      <p>La cybersécurité est un domaine en constante évolution...</p>
+    </article>
+    <article>
+      <h3>L'avenir de l'intelligence artificielle dans la défense</h3>
+      <p>L'intelligence artificielle est en train de révolutionner les stratégies de défense numérique...</p>
+    </article>
+  </section>
+
+  <!-- Formulaire de contact avec animation fade-in -->
+  <section id="contact" class="fade-in">
+    <h2>Contactez-moi</h2>
+    <p>Envie de discuter de projets passionnants ? Contactez-moi via ce formulaire.</p>
+    <form action="submit_form.php" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" class="neon-input" required>
+      
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" class="neon-input" required>
+      
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" class="neon-input" required></textarea>
+      
+      <button type="submit" class="neon-button">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2024 Rayan Carre. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Script JavaScript pour les animations au défilement -->
+  <script src="script.js"></script>
+</body>
+</html>
